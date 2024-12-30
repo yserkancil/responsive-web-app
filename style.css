@@ -423,10 +423,10 @@ section{
   }
 
   .wrapper {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
-    margin-left: 300px;
+    margin-left: 80px;
   }
 
   .testimonials-item {
@@ -436,7 +436,7 @@ section{
     border: 3px solid rgba(238, 238, 238, 0.2);
     border-radius: 2rem;
     margin: 0 2rem;
-    padding: 3opx 6opx;
+    padding: 3px 6px;
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -573,6 +573,7 @@ footer .copyright{
             position: absolute;
             top: 100%;
             right: 0;
+            display: none;
 
             width: 50%;
             padding: 1rem 3%;
@@ -693,13 +694,6 @@ footer .copyright{
             font-size: 1.7rem;
             line-height: 1;
         }
-
-        .wrapper {
-            align-items: center;
-            justify-content: center;
-        }
-
-
 
     }
     /*media queries*/
