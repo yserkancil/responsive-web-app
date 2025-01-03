@@ -423,10 +423,11 @@ section{
   }
 
   .wrapper {
-    display: flex;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
-    margin-left: 80px;
+    flex-direction: center;
+    /*margin-left: 80px;*/
   }
 
   .testimonials-item {
@@ -436,14 +437,14 @@ section{
     border: 3px solid rgba(238, 238, 238, 0.2);
     border-radius: 2rem;
     margin: 0 2rem;
-    padding: 3px 6px;
+    padding: 30px 60px;
     cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 1.5rem;
+    gap: 5rem;
     color: #fff;
     transition: 0.4s ease-in-out;
     
@@ -522,6 +523,7 @@ footer .copyright{
         grid-template-columns: repeat(2,1fr);
         margin: 0 5rem;
     }
+
 }
 
 @media (max-width:991px){
@@ -561,6 +563,7 @@ footer .copyright{
     .contact form {
         flex-direction: column;
     }
+
 }
     
 
@@ -577,7 +580,7 @@ footer .copyright{
 
             width: 50%;
             padding: 1rem 3%;
-            background-color: rgba(o, 0, 0,8);
+            background-color: var(--main-color);
             backdrop-filter: blur(20px) ;
             border-bottom-left-radius: 2rem;
             border-left: 2px solid var(--main-color);
